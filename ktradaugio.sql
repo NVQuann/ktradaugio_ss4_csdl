@@ -41,8 +41,6 @@ UPDATE products
 SET price = price + 10
 WHERE productId;
 
-
-
 -- Xóa 
 DELETE FROM products
 WHERE productId = 4 AND categoryId = 2;
@@ -55,3 +53,12 @@ SELECT * FROM products;
 
 SELECT * FROM products
 WHERE stock > 15;
+
+SELECT * FROM products
+WHERE price > 1000000 AND price < 25000000;
+
+SELECT * FROM products 
+WHERE productName <> 'iPhon 15' AND stock > 0;
+
+SELECT * FROM products
+WHERE productId <> 1 AND price > 500000;
